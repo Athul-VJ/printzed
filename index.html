@@ -113,6 +113,30 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:focus .dropbtn {background-color: #2980b9;}
 
+.nested-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 100%;
+    top: 0;
+    overflow-y: scroll;
+}
+
+.nested-dropdown-content a {
+    color: #dbae34;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.show {display:block;}
+
+
       </style>
 
       
@@ -212,8 +236,28 @@
                     <button class="dropbtn btn btn-warning  " style="margin-left: 20px;" onclick="toggleDropdown()">Our Services</button>
                     <div class="dropdown-content" id="myDropdown">
                       <a href="https://wa.me/971563303837?text=service:Graphic Design">Graphic Design </a>
-                      <a href="https://wa.me/971563303837?text=service:Offset / Digital pain">Offset / Digital pain</a>
-                      <a href="https://wa.me/971563303837?text=service:Flag & Poster">Flag & Poster</a>
+                      <a href="https://wa.me/971563303837?text=service:Offset / Digital pain">Flag & Poster</a>
+                      <a href="#" onclick="toggleNestedDropdown(event)">Offset / Digital pain</a>
+
+                      <div class="nested-dropdown-content " id="nestedDropdown">
+                        <a href="https://wa.me/971563303837?text=service:Rollup Banners">Business Cards</a>
+                        <a href="https://wa.me/971563303837?text=service:Wall Graphics">Premium Business Cards</a>
+                        <a href="https://wa.me/971563303837?text=service:Window Graphic">Offical and Commercial Papers</a>
+                        <a href="https://wa.me/971563303837?text=service:Exhibition Graphic">Brochures</a>
+                        <a href="https://wa.me/971563303837?text=service:3D Signage">Flyers</a>
+                        <a href="https://wa.me/971563303837?text=service:Hoarding Graphics">Envelopes</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Folders</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Shopping Bags</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Fast Food Boxes</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Die Cutting Products</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Paper Cups</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Gifts</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Sticker</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Menu</a>
+                        <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Bill Book</a>
+                    </div>
+
+
                       <a href="https://wa.me/971563303837?text=service:Rollup Banners">Rollup Banners</a>
                       <a href="https://wa.me/971563303837?text=service:Wall Graphics">Wall Graphics</a>
                       <a href="https://wa.me/971563303837?text=service:Window Graphic">Window Graphic</a>
@@ -1309,6 +1353,38 @@ window.onclick = function(event) {
     }
   }
 }
+
+function toggleNestedDropdown(event) {
+    event.preventDefault();
+    var nestedDropdown = document.getElementById("nestedDropdown");
+    nestedDropdown.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+        var nestedDropdowns = document.getElementsByClassName("nested-dropdown-content");
+        for (i = 0; i < nestedDropdowns.length; i++) {
+            var openNestedDropdown = nestedDropdowns[i];
+            if (openNestedDropdown.classList.contains('show')) {
+                openNestedDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+function toggleDropdown() {
+    var dropdownMenu = document.getElementById("myDropdown");
+    dropdownMenu.classList.toggle("show");
+}
+
 
   
   </script>
