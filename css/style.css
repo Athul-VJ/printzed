@@ -79,15 +79,16 @@ Template CSS **********/
   }
   @media screen and (min-width: 1024px) {
     .logo-black{
-         height: 100%;
-         position: absolute;
-         top: -16px;
+        height: 97%;
+        position: absolute;
+        top: -9px;
+        width: 154px;
     }
   }
   @media screen and (max-width: 767px) {
     .logo-black {
-        width: 57px;
-        margin-top: 5px;
+        width: 110px;
+        margin-top: 12px;
     }
   }
   

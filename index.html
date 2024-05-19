@@ -76,9 +76,16 @@
   border: none;
   cursor: pointer;
 }
-
+.dropbtn:hover{
+    background-color: #cca331;
+}
 /* Dropdown button on hover & focus */
-
+@media only screen and (max-width: 767px) {
+  /* Apply width of 94% */
+  .dropbtn {
+    width: 94%;
+  }
+}
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -111,7 +118,7 @@
 .show {display:block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:focus .dropbtn {background-color: #2980b9;}
+.dropdown:focus .dropbtn {background-color: #0d1013;}
 
 .nested-dropdown-content {
     display: none;
@@ -132,7 +139,7 @@
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color:rgb(32, 31, 31);}
 
 .show {display:block;}
 
@@ -232,8 +239,8 @@
                 <a href="about.html" class="nav-item nav-link nav-links" style="color: #dbae34 !important;">About</a>
                 <a href="service.html" class="nav-item nav-link" style="color: #dbae34 !important;">Service</a>
                 <a href="#contact" class="nav-item nav-link" style="color: #dbae34 !important;">Contact</a>
-                <div class="dropdown " style="margin-top: 17px;" >
-                    <button class="dropbtn btn btn-warning  " style="margin-left: 20px;" onclick="toggleDropdown()">Our Services</button>
+                <div class="dropdown" style="margin-top: 17px;" >
+                    <button class="dropbtn btn " style="margin-left: 20px; height: 48px;background-color: #dbae34;" onclick="toggleDropdown()">OUR SERVICES</button>
                     <div class="dropdown-content" id="myDropdown">
                       <a href="https://wa.me/971563303837?text=service:Graphic Design">Graphic Design </a>
                       <a href="https://wa.me/971563303837?text=service:Offset / Digital pain">Flag & Poster</a>
@@ -353,36 +360,30 @@
     </div>
     <!-- Header End -->
 
-
-    <!-- About Start -->
-    <div class="container-xxl py-5" style="background-color: #dbae34;">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="img/close.jpg" alt="">
-                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/open.jpg" alt=""
-                            style="margin-top: -25%;">
-                    </div>
+  <!-- About Start -->
+  <div class="container-xxl py-5" style="background-color: #dbae34;">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="d-flex flex-column">
+                    <img class="img-fluid rounded w-75 align-self-end" src="img/close.jpg" alt="">
+                    <img class="img-fluid rounded w-50  pt-3 pe-3" src="img/open.jpg" alt="" style="margin-top: -25%;">
                 </div>
-                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4 text-black-css">About Us</p>
-                    <h1 class="mb-4" text-black-css>Why You Should Trust Us? Get Know About Us!</h1>
-                    <p class="text-black-css">Printzed Design & Artwork Solution: Where Creativity Meets Precision.
-                        Since 2015, we've led the industry with innovative design, exceptional quality, and reliable
-                        service worldwide</p>
-                    <p class="mb-4 text-black-css">Creative Excellence: Our talented team of designers and printing
-                        specialists bring a blend of creativity and expertise to every project, ensuring that each piece
-                        we produce is a masterpiece.</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Expert Printing</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Precision Printing</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Quality Enhancement</p>
-                    <a class="btn btn-dark rounded-pill py-3 px-5 mt-3" href="./contact.html">Read More</a>
-                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
+                <p class="d-inline-block border rounded-pill py-1 px-4 text-black-css">About Us</p>
+                <h1 class="mb-4" text-black-css>Why You Should Trust Us? Get Know About Us!</h1>
+                <p class="text-black-css">Printzed Design & Artwork Solution: Where Creativity Meets Precision. Since 2015, we've led the industry with innovative design, exceptional quality, and reliable service worldwide</p>
+                <p class="mb-4 text-black-css">Creative Excellence: Our talented team of designers and printing specialists bring a blend of creativity and expertise to every project, ensuring that each piece we produce is a masterpiece.</p>
+                <p><i class="far fa-check-circle text-primary me-3"></i>Expert Printing</p>
+                <p><i class="far fa-check-circle text-primary me-3"></i>Precision Printing</p>
+                <p><i class="far fa-check-circle text-primary me-3"></i>Quality Enhancement</p>
+                <a class="btn btn-dark rounded-pill py-3 px-5 mt-3" href="./contact.html">Read More</a>
             </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
+<!-- About End -->
 
     <!-- Start Call to action -->
     <section class="call-action" data-stellar-background-ratio="0.5">
@@ -1141,7 +1142,7 @@
                                         style="height: 55px;">
                                 </div>
                                 <!--succes page-->
-                                <input type="hidden" name="_next" id="" value="https://printzed.ae/succes.html">
+                                <!-- <input type="hidden" name="_next" id="" value="https://printzed.ae/succes.html"> -->
                                 <input type="hidden" name="_captcha" id="" value="false">
                                 <div class="col-12 col-sm-6">
                                     <input type="email" name="email" required class="form-control border-0" placeholder="Your Email"

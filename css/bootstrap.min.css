@@ -2512,11 +2512,12 @@ textarea.form-control.is-invalid {
 .input-group .form-select.is-invalid {
   z-index: 3;
 }
+
 .btn {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #8d8e92;
+  color: #000000;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -2535,12 +2536,12 @@ textarea.form-control.is-invalid {
   }
 }
 .btn:hover {
-  color: #8d8e92;
+  color: #201e1e;
 }
 .btn-check:focus + .btn,
 .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(4, 99, 250, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(35, 36, 37, 0.25);
 }
 .btn:disabled,
 .btn.disabled,
@@ -2563,7 +2564,7 @@ fieldset:disabled .btn {
   border-color: #c9a132;
 }
 .btn-check:focus + .btn-primary,
-.btn-primary:focus {
+:focus {
   color: #fff;
   background-color: #c9a132;
   border-color: #c9a132;
@@ -2583,13 +2584,13 @@ fieldset:disabled .btn {
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(42, 122, 251, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 .btn-primary:disabled,
 .btn-primary.disabled {
   color: #fff;
-  background-color: #0463fa;
-  border-color: #0463fa;
+  background-color: #dbae34;
+  border-color: #dbae34;
 }
 .btn-secondary {
   color: #fff;
