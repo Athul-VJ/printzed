@@ -752,8 +752,19 @@ Template CSS **********/
     color: #000000;
 }
 
-.ads{
+/* .ads{
     width: 100%;
     height: 30%;
-    background: red;
+   
+} */
+@media screen and (max-width: 767px) {
+    .ads{
+      height: 18em !important;
+    }
+    .images img{
+        height: 18em !important;
+    }
+    .cr-head{
+        display: none;
+    }
 }
