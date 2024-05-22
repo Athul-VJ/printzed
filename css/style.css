@@ -12,6 +12,173 @@ Template CSS **********/
     font-size: medium;
 }
 
+
+
+.btn.btn-lg.btn-success.btn-lg-square.rounded-circle.watsapp:hover {
+    color: #dbae34;
+    font-weight: bold;
+  }
+          .feature-text h5 {
+      transition: all 0.5s ease-in-out;
+  }
+          .carousel-item img {
+            width: 100%;
+            height: auto;
+          }
+          .ads{
+      width: 100%;
+      height: 38em;
+  }
+  .ads .images{
+      width: 100%;
+      height: 100%;
+  }
+  .images img{
+      width: 100%;
+      height: 38em;
+  }
+  /* Style the dropdown button */
+  /* Style the dropdown button */
+  .dropbtn {
+    background-color: #dbae34;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover{
+      background-color: #cca331;
+  }
+  /* Dropdown button on hover & focus */
+  @media only screen and (max-width: 767px) {
+    /* Apply width of 94% */
+    .dropbtn {
+      width: 94%;
+    }
+    .img-fluid {
+        max-width: 55%;
+        height: auto;
+    }
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+ 
+
+ 
+.section-header h3 {
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #000000;
+    width: 50%;
+}
+
+#clients {
+    padding: 60px 0;
+    
+}
+#clients .clients-wrap {
+    border-top: 1px solid #dbae34;
+    border-left: 1px solid #dbae34;
+    margin-bottom: 30px;
+}
+
+#clients .client-logo {
+    padding: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #dbae34;
+    border-bottom: 1px solid #dbae34;
+    overflow: hidden;
+    background: #dbae34;
+    height: 160px;
+}
+
+#clients img {
+    transition: all 0.4s ease-in-out;
+}
+ 
+
+
+.slick-slide {
+   margin: 10px
+}
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #dbae34;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  
+  
+  /* Show the dropdown menu when the button is clicked */
+  .show {display:block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:focus .dropbtn {background-color: #0d1013;}
+  
+  .nested-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: black;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      left: 100%;
+      top: 0;
+      overflow-y: scroll;
+  }
+  
+  .nested-dropdown-content a {
+      color: #dbae34;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  
+  .dropdown-content a:hover {background-color:rgb(32, 31, 31);}
+  
+  .show {display:block;}
+  
+  
 .call-action {
 	background: black;
 	background-size: cover;
@@ -92,7 +259,10 @@ Template CSS **********/
     }
   }
   
-  
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     .logo-black {
         width: 112px;
