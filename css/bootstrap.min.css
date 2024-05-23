@@ -5560,9 +5560,9 @@ fieldset:disabled .btn {
     transition: none;
   }
 }
-.carousel-indicators .active {
+/* .carousel-indicators .active {
   opacity: 1;
-}
+} */
 .carousel-caption {
   position: absolute;
   right: 15%;
