@@ -600,7 +600,17 @@ Template CSS **********/
     justify-content: center;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
 }
-
+@media (min-width: 992px) {
+    .rep{
+        margin-right: 16px; /* Apply margin-right on larger screens */
+    }
+}
+.dp{
+    margin-left: 20px !important;
+    height: 48px !important;
+    background-color: #dbae34;
+    margin-top: -1px;
+}
 .header-carousel .owl-nav {
     position: absolute;
     width: 200px;

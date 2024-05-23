@@ -47,7 +47,6 @@
 
 
 
-
 </head>
 
 <body>
@@ -141,7 +140,7 @@
                 <a href="service.html" class="nav-item nav-link" style="color: #dbae34 !important;">Service</a>
                 <a href="#contact" class="nav-item nav-link" style="color: #dbae34 !important;">Contact</a>
                 <div class="dropdown" style="margin-top: 17px;">
-                    <button class="dropbtn btn " style="margin-left: 20px; height: 48px;background-color: #dbae34;"
+                    <button class="dropbtn btn dp" style="margin-left: 20px; height: 48px;background-color: #dbae34;"
                         onclick="toggleDropdown()">OUR SERVICES</button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="https://wa.me/971563303837?text=service:Graphic Design">Graphic Design </a>
@@ -179,7 +178,7 @@
                     </div>
                 </div>
                 <a href="contact.html?id=g" class="btn btn-primary" style="margin-left: 20px;">GET QUOTE</a>
-                <a href="contact.html?id=r" class="btn btn-primary " style="margin-left: 20px;">REPORT</a>
+                <a href="contact.html?id=r" class="btn btn-primary rep" style="margin-left: 20px;">REPORT</a>
 
             </div>
 
@@ -219,37 +218,28 @@
                 </div> -->
         <!-- </div>
     </div>  -->
- <div class="cont" style="margin: 12px;">
-    <div class="wow fadeInRight " data-wow-delay="0.5s" data-ride="carousel" >
-        <div class="owl-carousel header-carousel active">
-            <div class="owl-carousel-item position-relative block cr-width">
-                <img class="img-fluid img-height" src="img/offer-1.png" alt="">
-                <div class="owl-carousel-text">
-
+    <div class="cont" style="margin: 12px;">
+        <div class="wow fadeInRight " data-wow-delay="0.5s" data-ride="carousel" >
+            <div class="owl-carousel header-carousel active">
+                <div class="owl-carousel-item position-relative block cr-width">
+                    <img class="img-fluid img-height" src="img/offer-1.png" alt="">
+                    <div class="owl-carousel-text"></div>
+                </div>
+                <div class="owl-carousel-item position-relative cr-width">
+                    <img class="img-fluid img-height" src="img/offer-2.png" alt="">
+                    <div class="owl-carousel-text"></div>
+                </div>
+                <div class="owl-carousel-item position-relative cr-width">
+                    <img class="img-fluid img-height" src="img/offer-3.png" alt="">
+                    <div class="owl-carousel-text"></div>
+                </div>
+                <div class="owl-carousel-item position-relative cr-width">
+                    <img class="img-fluid img-height" src="img/offer-4.png" alt="">
+                    <div class="owl-carousel-text"></div>
                 </div>
             </div>
-              <div class="owl-carousel-item position-relative cr-width">
-                <img class="img-fluid img-height" src="img/offer-2.png" alt="">
-                <div class="owl-carousel-text">
-                    
-                </div>
-            </div> 
-            <div class="owl-carousel-item position-relative cr-width">
-                <img class="img-fluid img-height" src="img/offer-3.png" alt="">
-                <div class="owl-carousel-text">
-                    
-                </div>
-            </div> 
-            <div class="owl-carousel-item position-relative cr-width">
-                <img class="img-fluid img-height" src="img/offer-4.png" alt="">
-                <div class="owl-carousel-text">
-                    
-                </div>
-            </div> 
         </div>
     </div>
- </div>
-    
 
 
     <!-- Header Start -->
@@ -1343,7 +1333,22 @@
   
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="path/to/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 1, // Number of items to display at a time
+                loop: true, // Loop through the items
+                autoplay: true, // Enable auto-play
+                autoplayTimeout: 3000, // Time between slides in milliseconds
+                autoplayHoverPause: true, // Pause on hover
+                nav: true, // Show navigation arrows
+                dots: true // Show pagination dots
+            });
+        });
+    </script>
 
 </body>
 
