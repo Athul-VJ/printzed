@@ -115,7 +115,7 @@ function toggleDropdown() {
             margin:0,
             nav:false,
             autoplay:true,
-            autoplayTimeout:1999, // Adjust autoplay speed in milliseconds
+            autoplayTimeout:1500, // Adjust autoplay speed in milliseconds
             autoplayHoverPause:true,
             responsive:{
                 0:{
