@@ -108,3 +108,25 @@ function toggleDropdown() {
     dropdownMenu.classList.toggle("show");
 }
 
+
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:1999, // Adjust autoplay speed in milliseconds
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+    });

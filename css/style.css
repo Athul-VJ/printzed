@@ -615,7 +615,7 @@ Template CSS **********/
     position: absolute;
     width: 200px;
     height: 45px;
-    bottom: 30px;
+    bottom: 44px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -1006,6 +1006,9 @@ Template CSS **********/
 
     .cr-head {
         display: none;
+    }
+    .adjust{
+        height: 23em;
     }
 }
 
