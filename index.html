@@ -44,7 +44,37 @@
     <!-- Custom CSS -->
 
 
+    <style>
+      .marquee-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
 
+        .marquee-content {
+            display: flex;
+            transition: transform 0s;
+        }
+
+        .marquee-content img {
+            width: 30%;
+            height: 200px;
+        }
+
+        .scroll {
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
 
 
 </head>
@@ -218,6 +248,10 @@
                 </div> -->
         <!-- </div>
     </div>  -->
+
+
+   
+    <!-- !nokkaaaan -->
     <div class="cont" style="margin: 12px;">
         <div class="wow zoomIn" data-wow-delay="0.5s" data-ride="carousel" >
             <div class="owl-carousel header-carousel active">
@@ -241,7 +275,18 @@
         </div>
     </div>
 
+    <div class="marquee-container">
+        <div class="marquee-content" id="marqueeContent">
+            <img src="img/offer-1 (1).png" alt="Offer 1">
+            <img src="img/offer-1 (1).png" alt="Offer 2">
+            <img src="img/offer-1 (1).png" alt="Offer 3">
+            <img src="img/offer-1 (1).png" alt="Offer 4">
+            <img src="img/offer-1 (1).png" alt="Offer 5">
+            <img src="img/offer-1 (1).png" alt="Offer 6">
+        </div>
+    </div>
 
+ <!-- !nokkaaaan -->
     <!-- Header Start -->
     <div class="container-fluid header bg-yellow p-0 mb-5">
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
@@ -324,6 +369,8 @@
             </div>
         </div>
     </div>
+
+    
     <!-- About End -->
 
     <!-- Start Call to action -->
@@ -1252,6 +1299,13 @@
     <script>
 
 
+    </script>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('marqueeContent').classList.add('scroll');
+            }, 3000);
+        };
     </script>
     <script src="js/styles.js"></script>
 
