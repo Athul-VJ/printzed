@@ -45,31 +45,45 @@
 
 
     <style>
-      .marquee-container {
+        .cont-marq {
+            overflow: hidden;
             width: 100%;
-            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .marquee-container {
+            width: 95%;
+            height: 333px;
             overflow: hidden;
             position: relative;
+            border-radius: 60px;
+            margin-top: 22px;
         }
 
         .marquee-content {
             display: flex;
+            align-items: center;
             transition: transform 0s;
         }
 
-        .marquee-content img {
-            width: 30%;
-            height: 200px;
+        .marque-imagesss {
+            margin: 13px;
+            border-radius: 21px;
+            width: 53%;
+            height: auto;
         }
 
         .scroll {
-            animation: scroll 15s linear infinite;
+            animation: scroll 30s linear infinite;
+            /* Adjust duration as needed */
         }
 
         @keyframes scroll {
             0% {
                 transform: translateX(100%);
             }
+
             100% {
                 transform: translateX(-100%);
             }
@@ -246,14 +260,14 @@
                 
                    
                 </div> -->
-        <!-- </div>
+    <!-- </div>
     </div>  -->
 
 
-   
+
     <!-- !nokkaaaan -->
-    <div class="cont" style="margin: 12px;">
-        <div class="wow zoomIn" data-wow-delay="0.5s" data-ride="carousel" >
+    <div class="cont unwanted" style="margin: 12px;">
+        <div class="wow zoomIn" data-wow-delay="0.5s" data-ride="carousel">
             <div class="owl-carousel header-carousel active">
                 <div class="owl-carousel-item position-relative block cr-width">
                     <img class="img-fluid img-height" src="img/offer-1 (1).png" alt="">
@@ -274,19 +288,21 @@
             </div>
         </div>
     </div>
+    <div class="cont-marq">
+        <div class="marquee-container">
+            <div class="marquee-content" id="marqueeContent">
+                <img src="img/offer-1 (1).png" alt="Offer 1" class="marque-imagesss">
+                <img src="img/offer-2.png" alt="Offer 2" class="marque-imagesss">
+                <img src="img/offer-3.png" alt="Offer 3" class="marque-imagesss">
+                <img src="img/offer-4-en.png" alt="Offer 4" class="marque-imagesss">
+                
 
-    <div class="marquee-container">
-        <div class="marquee-content" id="marqueeContent">
-            <img src="img/offer-1 (1).png" alt="Offer 1">
-            <img src="img/offer-1 (1).png" alt="Offer 2">
-            <img src="img/offer-1 (1).png" alt="Offer 3">
-            <img src="img/offer-1 (1).png" alt="Offer 4">
-            <img src="img/offer-1 (1).png" alt="Offer 5">
-            <img src="img/offer-1 (1).png" alt="Offer 6">
+            </div>
         </div>
     </div>
 
- <!-- !nokkaaaan -->
+
+    <!-- !nokkaaaan -->
     <!-- Header Start -->
     <div class="container-fluid header bg-yellow p-0 mb-5">
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
@@ -370,7 +386,7 @@
         </div>
     </div>
 
-    
+
     <!-- About End -->
 
     <!-- Start Call to action -->
@@ -402,72 +418,73 @@
     <section id="clients" class="section-bg">
 
         <div class="container cont-height">
-  
-          <div class="section-header">
-            <h3>Our Clients</h3>
-            <p>Meet some of our clients</p>
-          </div>
-  
-          <div class="row no-gutters clients-wrap clearfix " style="visibility: visible; animation-name: fadeInUp;">
-  
-            <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
-              <div  class="client-logo">
-                <img src="img/ashtel.png" class="img-fluid" alt="">
-              </div>
+
+            <div class="section-header">
+                <h3>Our Clients</h3>
+                <p>Meet some of our clients</p>
             </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
-              <div class="client-logo">
-                <img src="img/c-2.png" class="img-fluid" alt="">
-              </div>
-            </div>
-          
-            <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
-              <div class="client-logo">
-                <img src="img/c-3.png" class="img-fluid" alt="">
-              </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
-              <div class="client-logo">
-                <img src="img/c-4.png" class="img-fluid" alt="">
-              </div>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6">
-              <div class="client-logo">
-                <img src="img/c-5.png" class="img-fluid" alt="">
-              </div>
-            </div>
-          
-            <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
-              <div class="client-logo">
-                <img src="img/c-6.png" class="img-fluid" alt="">
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
-                <div class="client-logo">
-                  <img src="img/WhatsApp_Image_2024-05-23_at_17.00.43_ad3fac51-removebg-preview.png" class="img-fluid" alt="">
+
+            <div class="row no-gutters clients-wrap clearfix " style="visibility: visible; animation-name: fadeInUp;">
+
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/ashtel.png" class="img-fluid" alt="">
+                    </div>
                 </div>
-              </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
-              <div class="client-logo">
-                <img src="img/c-7.png" class="img-fluid" alt="">
-              </div>
-            </div>
-<!--             
+
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/c-2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/c-3.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/c-4.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="client-logo">
+                        <img src="img/c-5.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/c-6.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/WhatsApp_Image_2024-05-23_at_17.00.43_ad3fac51-removebg-preview.png"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/c-7.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!--             
     
             <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
               <div class="client-logo">
                 <img src="https://bootstrapmade.com/demo/themes/NewBiz/img/clients/client-8.png" class="img-fluid" alt="">
               </div>
             </div> -->
-  
-          </div>
-  
+
+            </div>
+
         </div>
-  
-      </section>
+
+    </section>
     <!--/ End Call to action -->
 
     <div class="container-xxl py-5">
@@ -482,19 +499,23 @@
                         <div class="overflow-hidden">
                             <div class="owl-carousel header-carousel active">
                                 <div class="owl-carousel-item position-relative block cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/graphic-design-500x600.jpg" alt="">
+                                    <img class="img-fluid img-height adjust" src="img/graphic-design-500x600.jpg"
+                                        alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/graphic-design-project.jpg" alt="">
+                                    <img class="img-fluid img-height adjust" src="img/graphic-design-project.jpg"
+                                        alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/graphic-design-500x600.jpg" alt="">
+                                    <img class="img-fluid img-height adjust" src="img/graphic-design-500x600.jpg"
+                                        alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/graphic-design-project.jpg" alt="">
+                                    <img class="img-fluid img-height adjust" src="img/graphic-design-project.jpg"
+                                        alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -533,7 +554,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height   adjust" src="img/regular-office-envelope-printing.jpg" alt="">
+                                    <img class="img-fluid img-height   adjust"
+                                        src="img/regular-office-envelope-printing.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
@@ -541,7 +563,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height   adjust" src="img/regular-office-envelope-printing.jpg" alt="">
+                                    <img class="img-fluid img-height   adjust"
+                                        src="img/regular-office-envelope-printing.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -627,7 +650,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/design-template-flag-banner-stan.jpg" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/design-template-flag-banner-stan.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
@@ -635,7 +659,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/design-template-flag-banner-stan.jpg" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/design-template-flag-banner-stan.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -675,7 +700,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/display-banners-custom-large.png" alt="">
+                                    <img class="img-fluid img-height adjust" src="img/display-banners-custom-large.png"
+                                        alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
@@ -683,7 +709,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/display-banners-custom-large.png" alt="">
+                                    <img class="img-fluid img-height adjust" src="img/display-banners-custom-large.png"
+                                        alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -717,27 +744,30 @@
 
                 <!-- -------------------------------------------- -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative rounded overflow-hidden" style="margin-top: 5em;"><div class="overflow-hidden">
-                        <div class="owl-carousel header-carousel active">
-                            <div class="owl-carousel-item position-relative block cr-width">
-                                <img class="img-fluid img-height adjust" src="img/wall.jpg" alt="">
-                                <div class="owl-carousel-text"></div>
+                    <div class="team-item position-relative rounded overflow-hidden" style="margin-top: 5em;">
+                        <div class="overflow-hidden">
+                            <div class="owl-carousel header-carousel active">
+                                <div class="owl-carousel-item position-relative block cr-width">
+                                    <img class="img-fluid img-height adjust" src="img/wall.jpg" alt="">
+                                    <div class="owl-carousel-text"></div>
+                                </div>
+                                <div class="owl-carousel-item position-relative cr-width">
+                                    <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg"
+                                        alt="">
+                                    <div class="owl-carousel-text"></div>
+                                </div>
+                                <div class="owl-carousel-item position-relative block cr-width">
+                                    <img class="img-fluid img-height adjust" src="img/wall.jpg" alt="">
+                                    <div class="owl-carousel-text"></div>
+                                </div>
+                                <div class="owl-carousel-item position-relative cr-width">
+                                    <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg"
+                                        alt="">
+                                    <div class="owl-carousel-text"></div>
+                                </div>
                             </div>
-                            <div class="owl-carousel-item position-relative cr-width">
-                                <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg" alt="">
-                                <div class="owl-carousel-text"></div>
-                            </div>
-                            <div class="owl-carousel-item position-relative block cr-width">
-                                <img class="img-fluid img-height adjust" src="img/wall.jpg" alt="">
-                                <div class="owl-carousel-text"></div>
-                            </div>
-                            <div class="owl-carousel-item position-relative cr-width">
-                                <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg" alt="">
-                                <div class="owl-carousel-text"></div>
-                            </div>
-                        </div>
 
-                    </div>
+                        </div>
                         <div class="team-text bg-light text-center p-4">
                             <h5>WALL GRAPHICS</h5>
                             <p class="text-primary">Transform Spaces: Wall Graphics Solutions.</p>
@@ -766,19 +796,23 @@
                         <div class="overflow-hidden">
                             <div class="owl-carousel header-carousel active">
                                 <div class="owl-carousel-item position-relative block cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg" alt="">
+                                    <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg"
+                                        alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/3e232202c083d4bca72b5154a656aa84.png" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/3e232202c083d4bca72b5154a656aa84.png" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg" alt="">
+                                    <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg"
+                                        alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/3e232202c083d4bca72b5154a656aa84.png" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/3e232202c083d4bca72b5154a656aa84.png" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -819,7 +853,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/vitra-design-museum-papanek-designboom-600.jpg" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/vitra-design-museum-papanek-designboom-600.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
@@ -827,7 +862,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/vitra-design-museum-papanek-designboom-600.jpg" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/vitra-design-museum-papanek-designboom-600.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -867,17 +903,19 @@
                                     <img class="img-fluid img-height adjust" src="img/Reception-Signage.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
-                               
+
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/20d1eda4abdcdd1e9543df329ef56e39.png" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/20d1eda4abdcdd1e9543df329ef56e39.png" alt="">
                                     <div class="owl-carousel-text"></div>
-                                </div> 
+                                </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
                                     <img class="img-fluid img-height adjust" src="img/Reception-Signage.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/20d1eda4abdcdd1e9543df329ef56e39.png" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/20d1eda4abdcdd1e9543df329ef56e39.png" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -911,7 +949,8 @@
                         <div class="overflow-hidden">
                             <div class="owl-carousel header-carousel active">
                                 <div class="owl-carousel-item position-relative block cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/hoarding-construction-500-x-600.jpg" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/hoarding-construction-500-x-600.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
@@ -919,7 +958,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/hoarding-construction-500-x-600.jpg" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/hoarding-construction-500-x-600.jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
@@ -961,7 +1001,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/16f2342f9ee66bf92b7b55efeb4108e7 (1).jpg" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/16f2342f9ee66bf92b7b55efeb4108e7 (1).jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
@@ -969,7 +1010,8 @@
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/16f2342f9ee66bf92b7b55efeb4108e7 (1).jpg" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/16f2342f9ee66bf92b7b55efeb4108e7 (1).jpg" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -1004,19 +1046,23 @@
                         <div class="overflow-hidden">
                             <div class="owl-carousel header-carousel active">
                                 <div class="owl-carousel-item position-relative block cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/Close-Up-Of-a-Free-Food-Truck-Br.webp" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/Close-Up-Of-a-Free-Food-Truck-Br.webp" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/Editable-Free-Food-Truck-Brandin.webp" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/Editable-Free-Food-Truck-Brandin.webp" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative block cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/Close-Up-Of-a-Free-Food-Truck-Br.webp" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/Close-Up-Of-a-Free-Food-Truck-Br.webp" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                                 <div class="owl-carousel-item position-relative cr-width">
-                                    <img class="img-fluid img-height adjust" src="img/Editable-Free-Food-Truck-Brandin.webp" alt="">
+                                    <img class="img-fluid img-height adjust"
+                                        src="img/Editable-Free-Food-Truck-Brandin.webp" alt="">
                                     <div class="owl-carousel-text"></div>
                                 </div>
                             </div>
@@ -1301,8 +1347,8 @@
 
     </script>
     <script>
-        window.onload = function() {
-            setTimeout(function() {
+        window.onload = function () {
+            setTimeout(function () {
                 document.getElementById('marqueeContent').classList.add('scroll');
             }, 3000);
         };
@@ -1313,16 +1359,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Include Owl Carousel JS -->
     <script src="path/to/owl.carousel.min.js"></script>
-  <!-- Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<!-- Custom JS -->
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
 
 
 </body>
