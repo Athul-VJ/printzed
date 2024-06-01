@@ -845,10 +845,11 @@ Template CSS **********/
     position: relative;
     height: 100px;
     transition: .5s;
+    
 }
 
 .team-item:hover .team-text {
-    margin-top: -60px;
+    margin-top: -50px;
     height: 160px;
 }
 
