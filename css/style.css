@@ -191,7 +191,7 @@ Template CSS **********/
 }
 
 #clients .client-logo {
-    padding: 64px;
+    padding: 80px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -360,12 +360,16 @@ Template CSS **********/
         top: -9px;
         width: 154px;
     }
+ 
 }
 
 @media screen and (max-width: 767px) {
     .logo-black {
         width: 110px;
         margin-top: 12px;
+    }
+    .mr-service{
+     margin-top: 22em;   
     }
 }
 
@@ -377,6 +381,12 @@ Template CSS **********/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .logo-black {
         width: 112px;
+    }
+    .unwanted{
+        display: none;
+    }
+    .mr-service{
+     margin-top: -4em;   
     }
 }
 
