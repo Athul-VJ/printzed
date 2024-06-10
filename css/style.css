@@ -9,12 +9,148 @@ Template CSS **********/
     --dark: #000000;
 }
 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+:root {
+    /* Colors */
+    --brand-color: hsl(46, 100%, 50%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    /* Fonts */
+    --font-title: "Montserrat", sans-serif;
+    --font-text: "Lato", sans-serif;
+}
+
+/* RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+/* body,
+h2,
+p {
+  margin: 0;
+}
+
+/* GLOBAL STYLES */
+/* body {
+  display: grid;
+  place-items: center;
+  height: 100vh; */
+
+
+
+
+
+
+
 .ed {
     font-size: medium;
 }
 
 
+.cont-marq {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+/* Add this CSS to apply the zoom-in effect when the black box is displayed */
+
+.black-box {
+    display: none;
+    width: 90%;
+    max-height: 42em;
+    overflow-y: scroll;
+    background-color: #000000;
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /* Initial scale is 0 */
+    transition: transform 0.3s ease;
+    /* Add transition effect */
+    z-index: 1000;
+    border-radius: 25px;
+}
+
+.black-box.show {
+    transform: translate(-50%, -50%) scale(1);
+    /* Scale to 1 for zoom-in effect */
+}
+
+
+
+
+.black-box::-webkit-scrollbar {
+    display: none;
+}
+
+
+.black-box {
+    -ms-overflow-style: none;
+}
+
+
+.black-box {
+    scrollbar-width: none;
+}
+
+
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+
+
+
+.marquee-container {
+    width: 95%;
+    height: 333px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 60px;
+    margin-top: 22px;
+    box-shadow: inset 10px 0 8px -8px rgba(0, 0, 0, 0.5), inset -10px 0 8px -8px rgba(0, 0, 0, 0.5);
+}
+
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    transition: transform 0s;
+}
+
+.marque-imagesss {
+    margin: 13px;
+    border-radius: 21px;
+    width: 53%;
+    height: auto;
+}
+
+.scroll {
+    animation: scroll 30s linear infinite;
+    /* Adjust duration as needed */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 
 
@@ -66,19 +202,30 @@ Template CSS **********/
     transform: scale(1.1) !important;
 }
 
-.photo.even {
+/* .photo.even {
     transform: rotate(2deg);
 }
 
 .photo:not(.even) {
     transform: rotate(-2deg);
-}
+} */
 
 
 
 @media only screen and (min-width: 1024px) {
-    .unwanted{
+    .unwanted {
         display: none;
+    }
+
+    .mr-top {
+        margin-top: -29em;
+    }
+
+    .margin-only {
+        margin: 8em;
+    }
+    .card-margin{
+        margin: 3em;
     }
 }
 
@@ -139,22 +286,37 @@ Template CSS **********/
         height: auto;
     }
 
+    .card-margin {
+        margin: 64px;
+    }
+
     .cont-height {
         height: 65em;
     }
-    .cont{
+
+    .cont {
         height: 12em !important;
 
     }
 
-    .img-height{
-        height: 14em;
-    } .cr-width {
+    .img-height {
+        height: 12em;
+    }
+
+    .cr-width {
         width: 181%;
+    }
+
+    .mobile-size {
+        height: 13em;
+    }
+
+    .mobile-margin {
+        margin-top: -22em;
     }
 }
 
-/* The container <div> - needed to position the dropdown content */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -337,9 +499,11 @@ Template CSS **********/
         margin-top: -6px;
         font-size: 13px;
     }
-    .mob-un{
+
+    .mob-un {
         display: none;
     }
+
     .cont {
         height: 3em;
     }
@@ -360,7 +524,7 @@ Template CSS **********/
         top: -9px;
         width: 154px;
     }
- 
+
 }
 
 @media screen and (max-width: 767px) {
@@ -368,8 +532,9 @@ Template CSS **********/
         width: 110px;
         margin-top: 12px;
     }
-    .mr-service{
-     margin-top: 22em;   
+
+    .mr-service {
+        margin-top: 22em;
     }
 }
 
@@ -382,13 +547,16 @@ Template CSS **********/
     .logo-black {
         width: 112px;
     }
-    .unwanted{
+
+    .unwanted {
         display: none;
     }
-    .mr-service{
-     margin-top: -4em;   
+
+    .mr-service {
+        margin-top: -4em;
     }
 }
+
 @media only screen and (min-width: 1024px) {
     .p-lg-0 {
         padding: 5px !important;
@@ -678,17 +846,21 @@ Template CSS **********/
     justify-content: center;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
 }
+
 @media (min-width: 992px) {
-    .rep{
-        margin-right: 16px; /* Apply margin-right on larger screens */
+    .rep {
+        margin-right: 16px;
+        /* Apply margin-right on larger screens */
     }
 }
-.dp{
+
+.dp {
     margin-left: 20px !important;
     height: 48px !important;
     background-color: #dbae34;
     margin-top: -1px;
 }
+
 .header-carousel .owl-nav {
     position: absolute;
     width: 200px;
@@ -854,7 +1026,7 @@ Template CSS **********/
     position: relative;
     height: 100px;
     transition: .5s;
-    
+
 }
 
 .team-item:hover .team-text {
@@ -1086,10 +1258,12 @@ Template CSS **********/
     .cr-head {
         display: none;
     }
-    .adjust{
+
+    .adjust {
         height: 25em;
     }
-    .why-image{
+
+    .why-image {
         display: none;
     }
 
@@ -1099,5 +1273,5 @@ Template CSS **********/
     .cr-head {
         display: none;
     }
-    
+
 }

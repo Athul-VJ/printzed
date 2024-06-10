@@ -44,54 +44,19 @@
     <!-- Custom CSS -->
 
 
-    <style>
-        .cont-marq {
-            overflow: hidden;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
 
-        .marquee-container {
-            width: 95%;
-            height: 333px;
-            overflow: hidden;
-            position: relative;
-            border-radius: 60px;
-            margin-top: 22px;
-            box-shadow: inset 10px 0 8px -8px rgba(0,0,0,0.5), inset -10px 0 8px -8px rgba(0,0,0,0.5);
-        }
-        
 
-        .marquee-content {
-            display: flex;
-            align-items: center;
-            transition: transform 0s;
-        }
-
-        .marque-imagesss {
-            margin: 13px;
-            border-radius: 21px;
-            width: 53%;
-            height: auto;
-        }
-
-        .scroll {
-            animation: scroll 30s linear infinite;
-            /* Adjust duration as needed */
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
-
+<style>
+    .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffc421;
+    font-size: 30px;
+    cursor: pointer;
+}
+</style>
+    
 
 </head>
 
@@ -190,28 +155,8 @@
                         onclick="toggleDropdown()">OUR SERVICES</button>
                     <div class="dropdown-content" id="myDropdown">
                         <!-- <a href="https://wa.me/971563303837?text=service:Graphic Design">Graphic Design </a> -->
-                        <a href="#" onclick="toggleNestedDropdown(event)">Offset / Digital printing</a>
+                        <a href="#" onclick="toggleBlackBox(event)">Offset / Digital printing</a>
                         <a href="https://wa.me/971563303837?text=service:Offset / Digital pain">Flag & Poster</a>
-
-                        <div class="nested-dropdown-content " id="nestedDropdown">
-                            <a href="https://wa.me/971563303837?text=service:Rollup Banners">Business Cards</a>
-                            <a href="https://wa.me/971563303837?text=service:Wall Graphics">Premium Business Cards</a>
-                            <a href="https://wa.me/971563303837?text=service:Window Graphic">Offical and Commercial
-                                Papers</a>
-                            <a href="https://wa.me/971563303837?text=service:Exhibition Graphic">Brochures</a>
-                            <a href="https://wa.me/971563303837?text=service:3D Signage">Flyers</a>
-                            <a href="https://wa.me/971563303837?text=service:Hoarding Graphics">Envelopes</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Folders</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Shopping Bags</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Fast Food Boxes</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Die Cutting Products</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Paper Cups</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Gifts</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Sticker</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Menu</a>
-                            <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Bill Book</a>
-                        </div>
-
 
                         <a href="https://wa.me/971563303837?text=service:Rollup Banners">Rollup Banners</a>
                         <a href="https://wa.me/971563303837?text=service:Brandings">Brandings </a>
@@ -220,8 +165,10 @@
                         <a href="https://wa.me/971563303837?text=service:3D Signage">3D Signage</a>
                         <a href="https://wa.me/971563303837?text=service:Hoarding Graphics">Hoarding Graphics</a>
                         <a href="https://wa.me/971563303837?text=service:Vehcile Branding">Vehcile Branding</a>
-
                     </div>
+
+
+
                 </div>
                 <a href="contact.html?id=g" class="btn btn-primary" style="margin-left: 20px;">GET QUOTE</a>
                 <a href="contact.html?id=r" class="btn btn-primary rep" style="margin-left: 20px;">REPORT</a>
@@ -230,11 +177,615 @@
 
         </div>
     </nav>
-  
+
+   
+    <div id="blackBox" class="black-box wow zoomIn" data-wow-delay="0.5s">
+        
+        <span class="close-btn" onclick="closeBlackBox()">×</span>
+
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/graphic-design-500x600.jpg"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/graphic-design-project.jpg"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/graphic-design-500x600.jpg"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/graphic-design-project.jpg"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>GRAPHIC DESIGNING</h5>
+                        <p class="text-primary">Exploring the World of Graphics Designing</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square " href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
-  
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height  adjust" src="img/offset.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height   adjust"
+                                    src="img/regular-office-envelope-printing.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height  adjust" src="img/offset.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height   adjust"
+                                    src="img/regular-office-envelope-printing.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>OFFSET/DIGITAL PRINTING</h5>
+                        <p class="text-primary">Choosing the Right Printing Method: Offset vs. Digital</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/gift.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/mouse-pad-01.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/gift.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/mouse-pad-01.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>GIFT&PROMOTIONALS</h5>
+                        <p class="text-primary">Elevate Your Brand: Gift and Promotional Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/flag-2.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/design-template-flag-banner-stan.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/flag-2.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/design-template-flag-banner-stan.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>FLAG&POSTERS</h5>
+                        <p class="text-primary">Make a Statement: Flag and Poster Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------------------------------------- -->
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin" style="margin-top: 5em;">
+
+
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/Banner-printing.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/display-banners-custom-large.png"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/Banner-printing.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/display-banners-custom-large.png"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>ROLL UP BANNERS</h5>
+                        <p class="text-primary">Stand Tall: Roll-Up Banner Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- -------------------------------------------- -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin" style="margin-top: 5em;">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/wall.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/wall.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>WALL GRAPHICS</h5>
+                        <p class="text-primary">Transform Spaces: Wall Graphics Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin" style="margin-top: 5em;">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/3e232202c083d4bca72b5154a656aa84.png" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/print-and-cut-graphics.jpg"
+                                    alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/3e232202c083d4bca72b5154a656aa84.png" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>WINDOW GRAPHICS</h5>
+                        <p class="text-primary">Window Dressing: Dynamic Graphics Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin" style="margin-top: 5em;">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/exibhition.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/vitra-design-museum-papanek-designboom-600.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/exibhition.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/vitra-design-museum-papanek-designboom-600.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>EXIBHITION GRAPHICS</h5>
+                        <p class="text-primary">Showcase Success: Exhibition Graphics Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin" style="margin-top: 5em;">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/Reception-Signage.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/20d1eda4abdcdd1e9543df329ef56e39.png" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/Reception-Signage.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/20d1eda4abdcdd1e9543df329ef56e39.png" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>3D
+                            SIGNAGE</h5>
+                        <p class="text-primary">Dimensional Impact: 3D Signage Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin" style="margin-top: 5em;">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/hoarding-construction-500-x-600.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/Banner-printing.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/hoarding-construction-500-x-600.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust" src="img/Banner-printing.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>HOARDING
+                            GRAPHICS</h5>
+                        <p class="text-primary">Maximize Impact: Hoarding Graphics Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin" style="margin-top: 5em;">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/attachment_143953448.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/16f2342f9ee66bf92b7b55efeb4108e7 (1).jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust" src="img/attachment_143953448.jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/16f2342f9ee66bf92b7b55efeb4108e7 (1).jpg" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>VEHICLE
+                            BRANDING</h5>
+                        <p class="text-primary">Flexible Signage Solutions: Adaptable Advertising.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="team-item position-relative rounded overflow-hidden card-margin" style="margin-top: 5em;">
+                    <div class="overflow-hidden">
+                        <div class="owl-carousel header-carousel active">
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/Close-Up-Of-a-Free-Food-Truck-Br.webp" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/Editable-Free-Food-Truck-Brandin.webp" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative block cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/Close-Up-Of-a-Free-Food-Truck-Br.webp" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                            <div class="owl-carousel-item position-relative cr-width">
+                                <img class="img-fluid img-height adjust"
+                                    src="img/Editable-Free-Food-Truck-Brandin.webp" alt="">
+                                <div class="owl-carousel-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-text bg-light text-center p-4">
+                        <h5>FOOD
+                            TRUCK BRANDING</h5>
+                        <p class="text-primary">Drive-Thru Delight: Food Truck Branding Solutions.</p>
+                        <div class="team-social text-center">
+                            <a class="btn btn-square"
+                                href="https://www.facebook.com/share/4T7Zeq9eUkBXFxYB/?mibextid=qi2Omg"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/971563303837?text=Hi"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="2em" href="./index.html" class=""
+                                    height="1em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                                </svg></a>
+                            <a class="btn btn-square"
+                                href="https://www.instagram.com/printz_advt?igsh=MTZqZzBiMG43bG9wbw=="><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+
     <div class="cont unwanted" style="margin: 12px;">
         <div class="wow zoomIn" data-wow-delay="0.5s" data-ride="carousel">
             <div class="owl-carousel header-carousel active">
@@ -257,7 +808,7 @@
             </div>
         </div>
     </div>
-  
+
 
 
 
@@ -274,8 +825,8 @@
         <div class="photo">
             <img src="img/offer-4-en.png" alt="Cat 4">
         </div>
-        
-        </div>
+
+    </div>
     </div>
 
     <!-- !nokkaaaan -->
@@ -316,10 +867,10 @@
                     <div class="owl-carousel-item position-relative">
                         <img class="img-fluid" src="img/image.jpg" alt="">
                         <div class="owl-carousel-text">
-                            
+
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -433,7 +984,7 @@
                         <img src="img/c-6.png" class="img-fluid" alt="">
                     </div>
                 </div>
-               
+
                 <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
                     <div class="client-logo">
                         <img src="img/c-7.png" class="img-fluid" alt="">
@@ -1341,31 +1892,103 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom JS -->
 
-<script>    const photoWrapper = document.getElementById('photoWrapper');
-    const photos = Array.from(document.getElementsByClassName('photo'));
+    <script>    const photoWrapper = document.getElementById('photoWrapper');
+        const photos = Array.from(document.getElementsByClassName('photo'));
 
-    let count = 0;
-    photos.forEach(photo => {
-        count++;
-        if (count % 2) {
-            photo.classList.add('even');
+        let count = 0;
+        photos.forEach(photo => {
+            count++;
+            if (count % 2) {
+                photo.classList.add('even');
+            }
+        });
+
+        function checkPosition(photo) {
+            if (photo.getBoundingClientRect().right <= photoWrapper.getBoundingClientRect().left) {
+                photoWrapper.appendChild(photo);
+                photoWrapper.scrollLeft -= photo.clientWidth + 32; // Adjust scroll position to maintain continuous scroll
+            }
         }
-    });
 
-    function checkPosition(photo) {
-        if (photo.getBoundingClientRect().right <= photoWrapper.getBoundingClientRect().left) {
-            photoWrapper.appendChild(photo);
-            photoWrapper.scrollLeft -= photo.clientWidth + 32; // Adjust scroll position to maintain continuous scroll
+        function infiniteScroll() {
+            photoWrapper.scrollLeft += 1;
+            photos.forEach(checkPosition);
+            requestAnimationFrame(infiniteScroll);
         }
-    }
 
-    function infiniteScroll() {
-        photoWrapper.scrollLeft += 1;
-        photos.forEach(checkPosition);
-        requestAnimationFrame(infiniteScroll);
-    }
+        infiniteScroll();
+    </script>
 
-    infiniteScroll();
+    <script>
+      function toggleDropdown() {
+    var dropdown = document.getElementById("myDropdown");
+    var isDisplayed = dropdown.style.display === "block";
+    // Close any other dropdowns that might be open
+    closeAllDropdowns();
+
+    if (!isDisplayed) {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+
+function closeAllDropdowns() {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].style.display = "none";
+    }
+}
+
+function toggleBlackBox(event) {
+    event.preventDefault();
+    var blackBox = document.getElementById("blackBox");
+    var body = document.body;
+    var navbarCollapse = document.getElementById("navbarCollapse");
+
+    // Hide the dropdown menu and close the navbarCollapse
+    closeAllDropdowns();
+    navbarCollapse.classList.remove("show");
+
+    if (blackBox.style.display === "none" || blackBox.style.display === "") {
+        blackBox.style.display = "block";
+        body.classList.add("no-scroll");
+    } else {
+        blackBox.style.display = "none";
+        body.classList.remove("no-scroll");
+    }
+}
+function closeAllDropdowns() {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].style.display = "none";
+    }
+}
+
+
+function toggleBlackBox(event) {
+    event.preventDefault();
+    var blackBox = document.getElementById("blackBox");
+    var body = document.body;
+    var navbarCollapse = document.getElementById("navbarCollapse");
+
+    // Hide the dropdown menu and close the navbarCollapse
+    closeAllDropdowns();
+    navbarCollapse.classList.remove("show");
+
+    if (blackBox.style.display === "none" || blackBox.style.display === "") {
+        blackBox.style.display = "block";
+        body.classList.add("no-scroll");
+        blackBox.classList.add("show"); // Add the 'show' class to apply the zoom-in effect
+    } else {
+        blackBox.style.display = "none";
+        body.classList.remove("no-scroll");
+        blackBox.classList.remove("show"); // Remove the 'show' class
+    }
+}
+function closeBlackBox() {
+            document.getElementById('blackBox').style.display = 'none';
+        }
     </script>
 </body>
 
