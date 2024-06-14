@@ -491,7 +491,9 @@ p {
 
     background-color: transparent;
 }
-
+.maxx{
+    max-width: 269%;
+}
 .close-btn {
     position: absolute;
     top: 10px;
@@ -527,13 +529,15 @@ p {
         max-width: 55%;
         height: auto;
     }
-
+.maxx{
+    max-width: 134%;
+}
     .card-margin {
         margin: 64px;
     }
 
     .cont-height {
-        height: 65em;
+        height: 88em;
     }
 
     .cont {
