@@ -370,7 +370,7 @@ p {
 } */
 
 .row-gap{
-    margin-top: -3em;
+    margin-top: 1em;
 }
 .cards-tit{
     margin-top: -9em !important;
@@ -433,6 +433,7 @@ p {
     text-fill-color: transparent;
     position: relative;
     display: inline-block;
+    margin-top: -3em;
 }
 
 .bussines::after {
@@ -1495,6 +1496,7 @@ p {
 
 .text-black-css {
     color: #000000;
+    border-radius: 23px !important;
 }
 
 /* .ads{
