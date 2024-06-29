@@ -53,7 +53,7 @@
             justify-content: center;
             margin-top: 2em;
         }
-
+       
         .col-lg-3, .col-md-6 {
             display: flex;
             justify-content: center;
@@ -211,9 +211,29 @@
 
   
   <!-- The Modal -->
+  
+
   <div class="modal" id="myModal">
+    
+
+    <!-- <div class="dropdown dis-blocked-dd" style="margin-top: 17px;">
+        <button class="dropbtn btn dp" style="margin-left: 20px; height: 48px;background-color: #dbae34;"
+            onclick="Drop()">OUR SERVICES</button>
+        <div class="dropdown-content" id="myDropdow">
+            <a href="https://wa.me/971563303837?text=service:Graphic Design">Graphic Design </a> -->
+            <!-- <a href="#" data-toggle="modal" data-target="#myModal" >Offset / Digital printing</a>
+            <a href="https://wa.me/971563303837?text=service:Offset / Digital pain">Flag & Poster</a>
+
+            <a href="https://wa.me/971563303837?text=service:Rollup Banners">Rollup Banners</a>
+            
+        </div>
+
+
+
+    </div> -->
+   
     <div class="bussines-container">
-        <h2 class="bussines" style="margin-top: 4em!important;">Business Cards</h2>
+        <h2 class="bussines wow fadeInUp"  style="margin-top: 4em!important;">Business Cards</h2>
     </div>
     <div class="row g-4">
         <div class="col-lg-3 col-md-6  wow fadeInUp" data-wow-delay="0.1s">
@@ -1473,11 +1493,14 @@
             </div>
         </div>
         </div>
+        
+    
+
         <span type="button" class="close-btn" data-dismiss="modal">x</span>
         </div>
        
     </div>
-   
+    
 </div>
 
   
@@ -1517,6 +1540,14 @@
                     <img class="img-fluid img-height" src="img/offer-4-en.png" alt="">
                     <div class="owl-carousel-text"></div>
                 </div>
+                <div class="owl-carousel-item position-relative cr-width">
+                    <img class="img-fluid img-height" src="img/nfc.png" alt="">
+                    <div class="owl-carousel-text"></div>
+                </div>
+                <div class="owl-carousel-item position-relative cr-width">
+                    <img class="img-fluid img-height" src="img/paper cup.png" alt="">
+                    <div class="owl-carousel-text"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -1537,7 +1568,11 @@
         <div class="photo">
             <img src="img/offer-4-en.png" alt="Cat 4">
         </div>
-
+        <div class="photo">
+            <img src="img/paper cup.png" alt="Cat 4">
+        </div> <div class="photo">
+            <img src="img/nfc.png" alt="Cat 4">
+        </div>
     </div>
     </div>
 
@@ -1711,6 +1746,16 @@
                 <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
                     <div class="client-logo">
                         <img src="img/DEALS DRIVE.png" class="img-fluid maxx" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/AJWA.png" class="img-fluid ajva" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 wow zoomIn">
+                    <div class="client-logo">
+                        <img src="img/RUKUN.png" class="img-fluid rukun" alt="">
                     </div>
                 </div>
                 <!--
@@ -2412,7 +2457,7 @@
     <!-- Feature End -->
 
     <!-- Appointment Start -->
-    <div class="container-xxl py-5" id="contact">
+    <div class="container-xxl py-5" >
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -2527,7 +2572,8 @@
                 <h2>Address</h2>
                 <img src="./assets/images/about/home_line.png" alt="" class="img-fluid">
                 <div class="address-links">
-                  <li class="address1"><i class="fa-solid fa-location-dot"></i> Hor Al Anz East - Dubai - United Arab Emirates</li>
+                  <li class="address1"><i class="fa-solid fa-location-dot"></i> Shop No: 13, Sheikha Noora Bldg, Near Canadian Hospital, Abu Hail
+                    Dubai - U.A.E.</li>
                      <li><a href=""><i class="fa-solid fa-phone"></i> +971 52 538 6869 || +971 56 330 3837</a></li>
                      <li><a href=""><i class="fa-solid fa-envelope"></i>printzadvt@gmail.com</a></li>
                 </div>
@@ -2652,6 +2698,23 @@
             }
         }
 
+
+
+        function Drop() {
+            var dropdown = document.getElementById("myDropdow");
+            var isDisplayed = dropdown.style.display === "block";
+            // Close any other dropdowns that might be open
+            closeAllDropdowns();
+
+            if (!isDisplayed) {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+
+
+
         function closeAllDropdowns() {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             for (var i = 0; i < dropdowns.length; i++) {
@@ -2713,6 +2776,8 @@
             document.getElementById('myModal').style.display = 'none';
         })
     </script>
+
 </body>
+
 
 </html>

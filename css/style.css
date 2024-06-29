@@ -9,10 +9,31 @@ Template CSS **********/
     --dark: #000000;
 }
 
-
-.modal{
-  background-color: #0d1013
+.top-right-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
+.top-right-links .dropdown-menu a {
+    margin-left: 0;
+}
+.top-right-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.top-right-links a {
+    margin-left: 10px;
+}
+  
+.modal {
+  
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
 
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
@@ -393,6 +414,7 @@ p {
     .card-margin{
         margin: 3em;
     }
+    
 }
 
 .btn.btn-lg.btn-success.btn-lg-square.rounded-circle.watsapp:hover {
@@ -422,7 +444,7 @@ p {
 }
 .bussines {
     color: #ffffff;
-    background-image: linear-gradient(to bottom left, #dbae34, #dbae34);
+    background-image: linear-gradient(to bottom left, #ffffff, #ece6e6);
     padding: 0.5em;
     font-family: 'Arial', sans-serif;
     font-size: 2em;
@@ -511,6 +533,9 @@ p {
     .again-adj{
         height: 15em !important;
     }
+    .ajva{
+        max-width: 54%
+    }
     .dropbtn {
         width: 94%;
     }
@@ -538,7 +563,7 @@ p {
     }
 
     .cont-height {
-        height: 88em;
+        height: 115em;
     }
 
     .cont {
@@ -570,7 +595,9 @@ p {
 }
 
 
-
+.rukun{
+    max-width: 27% !important;
+}
 .section-header h3 {
     font-size: 36px;
     color: #000000;
@@ -729,6 +756,9 @@ p {
 @media screen and (min-width: 1024px) {
     .phone-next {
         display: none !important;
+    }
+    .rukun {
+        max-width: 53% !important;
     }
 }
 
