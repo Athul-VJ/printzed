@@ -1,12 +1,11 @@
 # printzed
 Keywords for reference 
 
-**Website Analysis:**
-The website is [Printzed.ae](http://printzed.ae), a printing and packaging solutions provider in the UAE. The website appears to be a relatively new entity, with a simple and clean design.
+
 
 **Keyword Analysis:**
 
-To create maximum keywords for SEO, I'll analyze the website's content, meta tags, and structure. Here are the top keywords and phrases that I've identified:
+
 
 1. **Primary Keywords:**
 	* Printing Services
