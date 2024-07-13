@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://printzed.ae/index.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/about.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/service.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/contact.html?id=g</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/contact.html?id=r</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/./contact.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/contact.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/report-suuces.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/index.html#contact</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/./index.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/./service.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://printzed.ae/./about.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
